@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+
+* 
+{
+    box-sizing: border-box;}
+
+body 
+{
+    font-family: Verdana, sans-serif;}
+
+.mySlides 
+{
+    display: none;}
+
+img 
+{
+    vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container 
+{
+  max-width: 1024px;
+  position: relative;
+  margin: auto;}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext 
+{
+display: inline-block;
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+top: 0;
+position: absolute;
+
+}
+
+.caption
+{
+    color: #FFFFFF;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+  
+</style>
+        <link rel="stylesheet" href="style.css" />
+        <title>Groupe SOLAVIH</title>
+    </head>
+    <body>
+        <div id="bloc_page">
+            <header id="entête">
+                <div id="block_entête">
+                    <div id="logo">
+                        <img src="images/solavih_logo.png" alt="Logo groupe solavih" />
+                    </div>
+                </div>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="Nous.html">A Propos</a></li>
+                            <li><a href="Partenaires.html">Nos Partenaires</a></li>
+                            <li><a href="Carriere.html">Carrières</a></li>
+                            <li>
+                                <a href="connexion.html">Espace client</a>
+                            </li>
+                        </ul>
+                    </nav>
+            </header>
+
+            <div class="separateur"></div>
+                    <!-- Début bannière -->             
+            <div id="banniere_image">
+                <div class="slideshow-container">
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/Ban01.png" style="width:100%"/>
+                        <div class="caption" style="position:absolute;top:70px; width:1100px; z-index:2; text-align: center; padding-right: 100px;">
+                        <h1>Ensemble redynamisons notre Afrique</h1>
+<p>Par les valeurs tels que le travail, <br/>l'esprit d'unité, la discipline et le respect 
+    de la personne hummaine.<p/>
+                        </div>
+                  </div>
+
+                  <div class="mySlides fade" style="position:relative; ">
+                    <div class="numbertext" style="z-index:1"></div>
+                    <img src="images/Ban2.png" style="width:100%"/>
+                        <div class="caption" style="position:absolute;top:70px; width:1100px; z-index:2; text-align: center; padding-right: 90px;">
+                        <h1>La force d’une équipe est chacun de ses membres.<br/> La force de chaque membre est l’équipe. » <br/>Phil Jackson.</h1>
+<P>Peu importe ton genre, que tu sois un homme ou une femme partage ton exprérience avec une équipe<br/> engager pour la redynamisation de l'industrie en Afrique.<P/>
+
+                            </div>
+                  </div>
+
+                  <div class="mySlides fade">
+                    <div class="numbertext"></div>
+                    <img src="images/Ban3.png" style="width:100%"/>
+                        <div class="caption" style="position:absolute;top:70px; width:1100px; z-index:2; text-align: center; padding-right: 100px;">
+                    <h1>« La réussite appartient à tout le monde. C’est au travail d’équipe qu’en revient le mérite.»<br/> Franck Piccard.</h1>
+<P>Les différences sont des atouts que nous valorisons dans le respect des valeurs afin de batir.<P/>
+                        </div>
+                  </div>
+
+                </div><br>
+
+                  <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                  </div>
+
+                <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 10000); // Change image every 10 seconds
+                }
+                </script>  
+            </div>
+            <!-- Fin bannière -->
+
+            <section>
+                <div id="bloc1_Pge5">
+                   <div class="Titre_block1_Pge5">    
+                        <p>Vous êtes passionné dans l’un de nos domaines d’activité ?<br/>
+Vous êtes créatifs et vous souhaitez exprimer votre savoir-faire à travers des projets novateurs ?<br/>
+Vous êtes un homme ? Ou une femme ? Vous êtes discipliné(e), respectueux(ses) avec des valeurs ?
+<h2>REJOIGNEZ NOTRE EQUIPES MAINTENANT</h2>
+                        </p>
+                    </div>            
+                </div>
+
+                <div id="bloc2_Pge5">
+                    <div class="Exhort_Pge5">
+                        <h2>L’Afrique<br/>regorge de talents</h2>
+                        <p>Hommes et femmes sont dotés d’incroyables savoir-faire. Il est donc important qu’à l’image de la Chine d’aujourd’hui, l’Afrique 
+                        s’engage dans la discipline et s’imprègne 
+                        de ses valeurs pour redynamiser son économie.
+                        C’est pourquoi le Groupe SOLAVIH, 
+                        au-delà des différences, veut relever 
+                        le défi technologique auquel est confrontée 
+                        l’Afrique d’aujourd’hui... 
+                        car demain nous appartient. L’avenir, c’est nous !</p>  
+                    </div> 
+                        <div class="imgEkip">
+                            <p><img src="images/equipeSolavih.png"/></p>
+                        </div>       
+                    </div>
+                </div>
+
+                <div id="bloc3_Pge5">
+                    <div>
+                       <h1>NOS DOMAINES D'ACTIVITES</h1>
+                    </div>
+
+                     <div id="prest_Dom">
+                        <div class="Domaine1">
+                            <img src="images/imgD1.png"style="width:100%"/>
+                        </div>
+                        <div class="Domaine2">
+                            <img src="images/imgD2.png"style="width:100%"/>
+                        </div>
+                        <div class="Domaine3">
+                            <img src="images/imgD3.png"style="width:100%"/>
+                        </div>
+                        <div class="Domaine4">
+                            <img src="images/imgD4.png"style="width:100%"/>
+                        </div>
+                        <div class="Domaine5">
+                            <img src="images/imgD5.png"style="width:100%"/>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="bloc4_Pge5">            
+
+                    <div>
+                        <h1>DECOUVREZ NOS OFFRES D'EMPLOIS</h1>
+                    </div>
+                </div>
+
+                <div id="bloc5_Pge5">  <!-- Début bloc5 --> 
+
+                    <div id="conteneur_offre">
+
+                        <div class="bloc_iframe">
+                            <iframe name="iframe_FPost" style="border: none; padding-top: 30px;
+                              padding-left: 30px; width: 500px; height: 550px;"></iframe>
+                        </div>
+                        <div class="bloc_preSoffres">
+                            <div class="offre1">
+<h6>COMMERCIAL DE TERRAIN FREELANCE <br/><br/>Côte d’ivoire /Abidjan<br/> 
+    Posté le 01 Août 2024 - A expiré le 31 Août 2024  
+                            <a href="fichePost-commercial T.html" target="iframe_FPost"><br/></a> </h6>              
+                            </div> 
+                            <div class="offre2">
+<h6>Aucnue offre d'emploi disponible
+                            <a href="fichePost.html" target="iframe_FPost"><br/></a></h6>             
+                            </div>  
+                            <div class="offre3">
+<h6>Aucnue offre d'emploi disponible
+                            <a href="fichePost.html" target="iframe_FPost"><br/></a></h6>                            </div>
+                            <div class="offre4">
+<h6>Aucnue offre d'emploi disponible
+                            <a href="fichePost.html" target="iframe_FPost"><br/></a></h6>                           </div> 
+                            <div class="offre5">
+<h6>Aucnue offre d'emploi disponible
+                            <a href="fichePost.html" target="iframe_FPost"><br/></a></h6>                           </div>  
+                        </div>
+
+                    </div>
+<p class="postulez">ENVOYER-NOUS UNE CANDIDATURE SPONTANEE A L'ADRESSE SUIVANTE :<br/>
+<a href="mailto :yvesavih@gmail.com" target="#">recrutement@groupesolavih.com </a></p>
+                </div>   <!-- Fin bloc5--> 
+
+                <div id="bloc5">
+                    <div>
+                        <p>Groupe SOLAVIH, demain nous appartiens... l’avenir c’est nous!</p>
+                    </div>
+                </div>
+
+            </section>
+            
+            <footer>
+                <div id="bloc6">
+                    <div id="baPage">
+                        <div class="Services">
+                            <p>
+                            <h3>NOS SERVICES</h3>
+                        Informatique<br/>
+                        Electronique<br/>
+                        Imprrimerie<br/>
+                        Formations Professionnelle
+                        <br/>
+                        Fournitures de bureau<br/> 
+                        Fournitures de matériels
+                        <br/> 
+                        informatiques<br/>
+                        </p>
+                        </div>
+
+                        <div class="Apropos">
+                            <p>
+                            <h3>A PROPOS</h3>
+                        Qui sommes-nous<br/>
+                        Notre équipe<br/>
+                        Nos valeurs<br/>
+                        Nos couleurs<br/>
+                        Conditions générale 
+                        de vente<br/>
+                            </p>
+                        </div>
+
+                        <div class="Adresse">
+                            <p>
+                            <h3>ADRESSE</h3>
+
+                        Quartier bracodi,<br/>
+                        non loin de la direction 
+                        <br/>
+                        générale des impôts<br/>
+                        03 bp 244 Abidjan 03<br/>
+                        www.groupesolavih.com<br/>
+                            </p>
+                        </div>
+
+                        <div class="Contact">
+                            <p>
+                            <h3>CONTACT</h3>
+
+                        Tél : (+225) 27 359 074 28<br/>
+                        Hot line : (+225) 01 428 677 17<br/>
+                        Whatsapp : (+225) 05 040 774 45<br/>
+                        groupesolavih.info@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Cop">
+                        <div class="Copyright">
+                            <p>Copyright - GROUPE SOLAVIH 12-2022 - Tous droits réservé
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+ 

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+
+* 
+{
+    box-sizing: border-box;}
+
+body 
+{
+    font-family: Verdana, sans-serif;}
+img 
+{
+    vertical-align: middle;}
+
+</style>
+
+        <link rel="stylesheet" href="style.css"/>
+        <title>Groupe SOLAVIH</title>
+    </head>
+    <body>
+        <div id="bloc_page">
+            <header id="entête">
+                <div id="block_entête">
+                    <div id="logo">
+                        <img src="images/solavih_logo.png" alt="Logo groupe solavih" />
+                    </div>
+                </div>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li><a href="Nous.html">A Propos</a></li>
+                            <li><a href="Partenaires.html">Nos Partenaires</a></li>
+                            <li><a href="Carriere.html">Carrières</a></li>
+                            <li>
+                                <a href="connexion.html">Espace client</a>
+                            </li>
+                        </ul>
+                    </nav>
+            </header>
+
+            <div class="separateur"></div>
+      
+            <section>
+                
+                  <!-- Début bloc5 --> 
+
+                    <div id="block_form">
+                        <div class="contenneur_form">
+                            
+                                <div class="button_box">
+                                    <div id="btn"></div>
+                                    <button class="toggle_btn" onclick="logined()">Se connecter</button>
+                                    <button class="toggle_btn" onclick="registered()">S'inscrire</button>
+                                </div>
+                                <div class="icones-RS">
+                                    <img src="images/Whatsapp.png" alt=""/>
+                                    <img src="images/facebook.png" alt=""/>
+                                    <img src="images/tiwter.png" alt=""/>
+                                </div>
+                                <form id="login" class="input_group">
+                                    <input type="text" class="input_field" placeholder="Entrer votre Identifiant" required>
+                                    <input type="password" class="input_field" placeholder="Entrer votre mot de passe" required>
+                                    <input type="checkbox" class="check_box">
+                                        <span class="conditions">Mot de passe oublié?</span>
+                                    <button type="submit" class="submit_btn">Se connecter</button> 
+                                </form>
+                                <form id="register" class="input_group">
+                                    <input type="text" class="input_field" placeholder="Entrer votre Identifiant"required>
+                                    <input type="email" class="input_field" placeholder="Entrer votre Email" required>
+                                    <input type="password" class="input_field" placeholder="Entrer votre mot de passe" required>
+                                    <input type="checkbox" class="check_box">
+                                    <span class="conditions">En créant un compte, vous acceptez nos Conditions d'utilisation et notre Politique d'entreprise</span>
+                                    <button type="submit" class="submit_btn">S'inscrire</button> 
+                                </form> 
+                            </div>  
+                        </div>            
+                    </div>
+
+<script>
+            var login = document.getElementById('login');
+            var register = document.getElementById('register');
+            var btn = document.getElementById('btn');
+
+            function registered() {
+                login.style.left = "-400px";
+                register.style.left = "50px";
+                btn.style.left = "120px";/* REGLAGE DU BOUTON BASCULE */
+             }
+
+            function logined() {
+                login.style.left= "50px";
+                register.style.left= "450px";
+                btn.style.left= "0";
+             }
+
+</script> 
+
+                </div><!-- Fin bloc5--> 
+
+                <div id="bloc5">
+                    <div>
+                        <p>Groupe SOLAVIH, demain nous appartiens... l’avenir c’est nous!</p>
+                    </div>
+                </div><!-- Fin bloc5 -->
+                </section>
+            
+            <footer>
+                <div id="bloc6">
+                    <div id="baPage">
+                        <div class="Services">
+                            <p>
+                            <h3>NOS SERVICES</h3>
+                        Informatique<br/>
+                        Electronique<br/>
+                        Imprrimerie<br/>
+                        Formations Professionnelle
+                        <br/>
+                        Fournitures de bureau<br/> 
+                        Fournitures de matériels
+                        <br/> 
+                        informatiques<br/>
+                        </p>
+                        </div>
+
+                        <div class="Apropos">
+                            <p>
+                            <h3>A PROPOS</h3>
+                        Qui sommes-nous<br/>
+                        Notre équipe<br/>
+                        Nos valeurs<br/>
+                        Nos couleurs<br/>
+                        Conditions générale 
+                        de vente<br/>
+                            </p>
+                        </div>
+
+                        <div class="Adresse">
+                            <p>
+                            <h3>ADRESSE</h3>
+
+                        Quartier bracodi,<br/>
+                        non loin de la direction 
+                        <br/>
+                        générale des impôts<br/>
+                        03 bp 244 Abidjan 03<br/>
+                        www.groupesolavih.com<br/>
+                            </p>
+                        </div>
+
+                        <div class="Contact">
+                            <p>
+                            <h3>CONTACT</h3>
+
+                        Tél :(+225) 27 359 074 28<br/>
+                        Hot line :(+225) 01 428 677 17<br/>
+                        Whatsapp :(+225) 05 040 774 45<br/>
+                        groupesolavih.info@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Cop">
+                        <div class="Copyright">
+                            <p>Copyright - GROUPE SOLAVIH 12-2022 - Tous droits réservé
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- Fin bloc6 -->
+            </footer>
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+ 

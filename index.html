@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <style>
+
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+
+.mySlides 
+{
+    display: none;     
+}
+
+img /* logo */
+{
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+.slideshow-container
+{
+  max-width: 1024px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+
+}
+
+
+.caption
+{
+    color: #FFFFFF;
+}
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 02px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+</style>
+        <link rel="stylesheet" href="style.css" />
+        <title>GROUPE SOLAVIH</title>
+    </head>
+    <body>
+        <div id="bloc_page">
+            <header id="entête">
+                <div id="block_entête">
+                    <div id="logo">
+                        <img src="images/solavih_logo.png" alt="Logo groupe solavih" />
+                    </div>
+                </div>
+                    <nav>
+                        <ul class="menu">
+                            <li><a href="Accueil.html" >Accueil</a></li>
+                            <li><a href="Nous.html">A Propos</a></li>
+                            <li><a href="Partenaires.html">Nos Partenaires</a></li>
+                            <li><a href="Carriere.html">Carrières</a></li>
+                            <li><a href="connexion.html">Espace client</a></li>
+                        </ul>
+                    </nav>
+            </header>
+            <div class="separateur"></div>
+                    <!-- Début bannière -->             
+            <div>
+                <div class="slideshow-container">
+                    <div class="mySlides fade">
+                        <img src="images/Ban01.png" style="width:100%">
+                        <div class="caption"style="position:absolute; top:70px; width:1024px; z-index:2; text-align: center; ">
+                        <h1>Vous êtes un particulier? Une PME?<br/>
+Un établissement scolaire? Une collectivité?<br/>
+Un centre de santé?<br/></h1>
+<P>Quelques soit votre secteur d’activité, bénéficiez de compétences sûr pour vous<br/>
+accompagnez dans votre projet d’entreprise.<P/>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade" style="position:relative; ">
+                        <img src="images/Ban2.png" style="width:100%">
+                        <div class="caption" style="position:absolute;top:70px; width:1024px; z-index:2; text-align: center;">
+                        <h1>Nous intervenons dans des domaines qui se veulent<br/>incontournable 
+                            dans la survie de toute entreprise.<br/></h1>
+<P>Nos interventions sont possibles à l'intérieur du pays comme à Abidjan.<br/>
+Contactez notre service client et bénéficiez de toutes les informations utiles.<P/>
+                        </div>
+                    </div>
+
+                    <div class="mySlides fade">
+                        <img src="images/Ban3.png" style="width:100%">
+                        <div class="caption" style="position:absolute;top:70px; width:1024px; z-index:2; text-align: center;">
+                        <h1>Jusqu'au 31 décembre 2025, devenez partenaire du <br/>Groupe SOLAVIH
+en s'ouscrivant à un contrat <br/>de maintenance sur trois ans.<br/></h1>
+<P>Et bénéficiez d'une réduction de 15% sur l'ensemble de nos produits et services<br/>et de 5% du bénéfice annuel selon la durée de votre contrat.<P/>
+                        </div>
+                    </div>
+
+                </div><br/>
+
+                <div style="text-align:center">
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                    <span class="dot"></span> 
+                </div>
+
+                <script>
+                let slideIndex = 0;
+                showSlides();
+
+                function showSlides() {
+                  let i;
+                  let slides = document.getElementsByClassName("mySlides");
+                  let dots = document.getElementsByClassName("dot");
+                  for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                  }
+                  slideIndex++;
+                  if (slideIndex > slides.length) {slideIndex = 1}    
+                  for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                  }
+                  slides[slideIndex-1].style.display = "block";  
+                  dots[slideIndex-1].className += " active";
+                  setTimeout(showSlides, 5000); // Change image every 5 seconds
+                }
+                </script>  
+            </div>
+            <!-- Fin bannière -->
+
+            <section>
+                <div id="bloc1">
+                    <div class="Titre_block1">
+                        <p>Nous vous proposons des services sur mesure et de qualité dans des domaines qui <br/>se veulent incontournables dans la survie de toutes entreprises.
+                        </p>
+                        <h2>NOS DOMAINES D'ACTIVITES</h2>
+                    </div>
+                    <div id="intro">
+                        <div class="intro_info">
+                            <p><a href="ServcINFOR.html"><img src="images/intro1.png"/></a></p>
+                        </div>
+                        <div class="intro_impr">
+                            <p><a href="ServcIMPRI.html"><img src="images/intro2.png"/></a></p>
+                        </div>
+                        <div class="intro_eln">
+                            <p><a href="ServcELECT.html"><img src="images/intro3.png"/></a></p>
+                        </div>
+                        <div class="intro_form">
+                            <p><a href="ServcFPROF.html"><img src="images/intro4.png"/></a></p>
+                        </div>
+                        <div class="intro_fBuro">
+                            <p><a href="ServcFBURO.html"><img src="images/intro5.png"/></a></p>
+                        </div>
+                    </div>
+                </div><!-- Fin bloc1 -->
+                <div id="bloc2">
+                    <div class="presentation">
+                        <h2>QUI-SOMMES NOUS?</h2>
+                        <p>Composé d’une équipe jeune et passionnée, tous experts chacun dans son<br/> 
+domaine, le Groupe SOLAVIH est une société de services en ingénierie<br/>informatique. Notre vocation, vous accompagner dans votre projet d’entreprise à travers des solutions sur mesure et adaptées à votre budget.</p>
+ 
+<p>Que vous soyez une PME, un établissement scolaire, un centre de santé,<br/>une collectivité... le Groupe SOLAVIH est votre partenaire sûr.</p>
+<p>Le Groupe SOLAVIH, c'est aussi des valeurs fortes et une vision pour l'avenir.</p>  </div> 
+                        <div class="imgEkip">
+                            <p><img src="images/equipeSolavih.png"/></p>
+                        </div>       
+                    </div>
+                </div><!-- Fin bloc2 -->
+                <div id="bloc3">
+                    <div>
+                        <h2>VOUS ÊTES UNE ENTREPRISE ?</h2>
+                        <p>Souscrivez à nos contrats de maintenance en nous confiant la gestion totale de votre parc informatique et bénéficiez,<br/>en plus d’un suivi complet de votre système informatique, d’une réduction de 15 %<br/>sur tout le reste de nos produits et services.
+                        </p> 
+                    </div>
+                </div><!-- Fin bloc3 -->
+                <div id="bloc4">
+                    <div>
+                       <p><h2>QUEL SONT NOS TYPES DE CONTRAT POUR VOUS?</h2>
+Grâce à la flexibilité de nos prix, <br/>nous vous proposons des contrats étudiés pour un partenariat <br/>gagnant-gagnant.
+                        </p> 
+                    </div>
+                    <div id="typ_ctr">
+                        <div class="ctr1">
+                            <p>Contrat<br/>
+                            de maintenance<br/>
+                            <h2>BASIC PLUS</h2>
+                            01 ans<br/>
+                            avec<br/>
+                            Audit,<br/> 
+                            assistance et<br/>
+                            conseil<br/>
+                            informatique<br/>
+                            gratuit.</p>
+
+                        </div>
+                        <div class="ctr2">
+                            <p>Contrat<br/>
+                            de maintenance<br/>
+                            <h2>ESPERANCE PLUS</h2>
+                            03 ans<br/>
+                            avec<br/>
+                            Audit,<br/>
+                            assistance et<br/>
+                            conseil<br/>
+                            informatique<br/>
+                            gratuit.</p>
+                        </div>
+                        <div class="ctr3">
+                            <p>Contrat<br/> 
+                            de maintenance<br/>
+                            <h2>CONFIANCE PLUS</h2>
+                            06 ans<br/>
+                            avec<br/>
+                            Audit,<br/>
+                            assistance et<br/>
+                            conseil<br/>
+                            informatique<br/>
+                            gratuit.</p>
+                        </div>
+                    </div><!-- Fin typ_ctr -->
+
+                    <div>
+                       
+                        <p><h2>SOUHAITEZ-VOUS <br/>MAINTENANT SOUSCRIRE A NOS CONTRATS ?</h2></p> 
+                        <p class="lien_form"><a href="Documents/form_PC.PDF" >Télécharger le formulaire de<br/> préparation de contrat maintenant</a>
+                        </p> 
+                        <div class="contactW">
+                        <p>Numéro Whatsapp
+                        <h2>+225 05 04 07 74 45 </h2> </p>
+                        </div>
+                    </div>
+                </div><!-- Fin bloc4 -->
+                <div id="bloc5">
+                    <div>
+                        <p>Groupe SOLAVIH, demain nous appartiens... l’avenir c’est nous!</p>
+                    </div>
+                </div><!-- Fin bloc5 -->
+                </section>
+            
+            <footer>
+                <div id="bloc6">
+                    <div id="baPage">
+                        <div class="Services">
+                            <p>
+                            <h3>NOS SERVICES</h3>
+                        Informatique<br/>
+                        Electronique<br/>
+                        Imprrimerie<br/>
+                        Formations Professionnelle
+                        <br/>
+                        Fournitures de bureau<br/> 
+                        Fournitures de matériels
+                        <br/> 
+                        informatiques<br/>
+                        </p>
+                        </div>
+
+                        <div class="Apropos">
+                            <p>
+                            <h3>A PROPOS</h3>
+                        Qui sommes-nous<br/>
+                        Notre équipe<br/>
+                        Nos valeurs<br/>
+                        Nos couleurs<br/>
+                        Conditions générale 
+                        de vente<br/>
+                            </p>
+                        </div>
+
+                        <div class="Adresse">
+                            <p>
+                            <h3>ADRESSE</h3>
+
+                        Quartier bracodi,<br/>
+                        non loin de la direction 
+                        <br/>
+                        générale des impôts<br/>
+                        03 bp 244 Abidjan 03<br/>
+                        www.groupesolavih.com<br/>
+                            </p>
+                        </div>
+
+                        <div class="Contact">
+                            <p>
+                            <h3>CONTACT</h3>
+
+                        Tél :(+225) 27 359 074 28<br/>
+                        Hot line :(+225) 01 428 677 17<br/>
+                        Whatsapp :(+225) 05 040 774 45<br/>
+                        groupesolavih.info@gmail.com
+                            </p>
+                        </div>
+                    </div>
+
+                    <div id="Cop">
+                        <div class="Copyright">
+                            <p>Copyright - GROUPE SOLAVIH 12-2022 - Tous droits réservé
+                            </p>
+                        </div>
+                    </div>
+                </div><!-- Fin bloc6 -->
+            </footer>
+
+
+        </div>
+    </body>
+</html>
+
+
+
+
+
+
+ 
