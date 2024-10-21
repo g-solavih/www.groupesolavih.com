@@ -37,8 +37,7 @@ body
 #bloc_page
 {
     width: 1152px;
-    height: auto;
-    margin: auto;
+    margin-left: 7%;
     background-color: #F2F2F2;
 
 }
@@ -748,7 +747,6 @@ section
     justify-content: center;
     flex-direction: row;
     align-items: center;
-    width: 1146px;
     height: 350px;
     background-color: #FFFFFF;
 }
