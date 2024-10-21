@@ -846,7 +846,7 @@ section
     text-align: center;
     width: 1146px;
     height: 150px;
-    margin-left: 70px;
+    margin-left: 7%;
     color: #CF6426;
     background-color: #1A1A1A;
     padding-top: 5px;
@@ -1024,7 +1024,7 @@ section
     text-align: center;
     width: 1146px;
     height: 90px;
-    margin-left: 70px;
+    margin-left: 7%;
     color: #CF6426;
     background-color: #1A1A1A;
     padding-top: 5px;
@@ -1182,7 +1182,7 @@ section
     text-align: center;
     width: 1146px;
     height: 800px;
-    margin-left: 70px;
+    margin-left: 7%;
     background-color: #F2F2F2;
 }
 
@@ -1483,7 +1483,7 @@ section
     text-align: center;
     width: 1146px;
     height: 70px;
-    margin-left: 70px;
+    margin-left: 7%;
     color: #CF6426;
     background-color: black;
     font-size: 1.4em;
@@ -1511,7 +1511,7 @@ section
     align-items: center;
     width: 1146px;
     height: 450px;
-    margin-left: 70px;
+    margin-left: 7%;
     background-color: #404040;
     border: solid 1px orange;
 }
