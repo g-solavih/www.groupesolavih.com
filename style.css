@@ -64,8 +64,8 @@ body
 #bloc_page2
 {
     width: 1152px;
-    height: auto;
-    margin: auto;
+    height: auto ;
+    margin-left: 7%;
     background-color: #F2F2F2;
 }
 
@@ -661,7 +661,7 @@ section
 {
     width: 730px;
     height: 120px;
-    margin-top: 15%;
+    margin-top: 10%;
     text-align: center; 
     background-color: #F2F2F2;
 }
@@ -1074,7 +1074,6 @@ section
 {
     display: flex;
     flex-direction: column;
-    width: 1146px;
     background-color: #F2F2F2;
     margin-left: 7%;
 }
@@ -1316,7 +1315,7 @@ section
     background-color: black;
     border-radius: 30px;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
-    margin-left: 24%;
+    margin-left: 23%;
     line-height:10px; /* modifier l'interligne */
     padding-top: 1px;
 
