@@ -37,20 +37,29 @@ body
 #bloc_page
 {
     width: 1152px;
+    height: auto ;
     margin-left: 7%;
     background-color: #F2F2F2;
-
 }
 
 /* Paramètre pour rendre adapter mon site a tout type d'ecran */
-@media screen and (max-width: 1152px){
-    
-    #bloc_page
+@media screen and (max-width: 1152px)
+{
+    .Tous
+    {
+    min-width: 90%;
+    }
+}
+
+@media screen and (max-width: 320px)
+{
+    .Tous
     {
     min-width: 90%;
     }
 }
 /* Fin du Paramètre pour rendre adapter mon site a tout type d'ecran */
+
 
 #bloc_page2
 {
@@ -349,11 +358,10 @@ section
     align-items: center;
     width: 1152px;
     height: 420px;
-    margin-top: 110px;
+    margin-top: 10%;
     background-color: #F2F2F2;
     border: solid 1px orange;
 }
-
 #bloc1_Pge2
 {
     display: flex;
@@ -409,7 +417,7 @@ section
 {
     display: flex;
     align-items: center;
-    height:440px;
+    height:460px;
     width: 500px;
     font-size: 13px;
     background-color: gray;
@@ -421,6 +429,36 @@ section
 }
 
 
+.Titre_INFOR
+{
+    
+    color: wheat;
+}
+
+.Titre_IMP
+{
+    
+    color: wheat;
+}
+
+.Titre_ELEC
+{
+    
+    color: wheat;
+}
+
+.Titre_FBMI
+{
+    
+    color: wheat;
+    line-height: 23px;
+}
+.Titre_FCP
+{
+    
+    color: wheat;
+    line-height: 23px;
+}
  
 /*mise en forme du Slides de la page Services**********************************************/
 
@@ -571,7 +609,7 @@ section
     margin-left: 25%;
     line-height:10px; /* modifier l'interligne */
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 8px;
     font-size: 10px;
 
 }
@@ -626,7 +664,6 @@ section
     margin-top: 15%;
     text-align: center; 
     background-color: #F2F2F2;
-
 }
 
 .Titre_block1_Pge2
@@ -644,10 +681,10 @@ section
 
 .intro_info
 {
-    height: 90vh;
+    height: 50px;
     margin-right: 15px;
     margin-left: 100px;
-    margin-top: 55px;;
+    padding-bottom: 45%;
 }
 
 .intro_info img
@@ -665,7 +702,9 @@ section
 
 .intro_impr
 {
-    height: 90vh;
+    height: 50px;
+    padding-bottom: 50%;
+
 }
 
 .intro_impr img
@@ -683,10 +722,10 @@ section
 
 .intro_eln
 {
-    height: 90vh;
+    height: 50px;
     margin-right: 15px;
     margin-left: 15px;
-    margin-top: 55px;;
+    padding-bottom: 45%;
 }
 
 .intro_eln img
@@ -704,7 +743,9 @@ section
 
 .intro_form
 {
-    height: 90vh;
+    height: 50px;
+    padding-bottom: 50%;
+
 }
 
 .intro_form img
@@ -722,10 +763,11 @@ section
 
 .intro_fBuro
 {
-    height: 90vh;
+    height: 50px;
     margin-right: 100px;
     margin-left: 15px;
-    margin-top: 55px;;
+    padding-bottom: 45%;
+
 }
 
 .intro_fBuro img
