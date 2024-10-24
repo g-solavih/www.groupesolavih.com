@@ -53,7 +53,11 @@ body
 
 @media screen and (max-width: 1152px)
 {
- 
+
+    #bloc5_Pge5_services p
+    {
+     font-size: 0.7em;
+    }
 }
 
 @media screen and (max-width: 1152px)
@@ -1075,8 +1079,16 @@ section
     line-height: 1.4emm;
 }
 
-#bloc5_Pge5
+#bloc5_Pge5_services
 {
+    display: flex;
+    flex-direction: column;
+    background-color: #F2F2F2;
+    margin-left: 7%;
+}
+#bloc5_Pge5_carriere
+{
+    width: 1146px;
     display: flex;
     flex-direction: column;
     background-color: #F2F2F2;
